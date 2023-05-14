@@ -1,0 +1,102 @@
+Settings
+=======================================
+
+.. http://avtanski.net/projects/lcd/
+
+
+Bounce
+---------------------------------------------------------
+
+Select the bouncing behavior. 
+
+.. image:: /images/settings/1-bounce.png
+
+
+Steps per Revolution
+---------------------------------------------------------
+
+Select number of steps per revolution. 
+
+.. image:: /images/settings/2-steps-per-rev.png
+
+
+Units per Revolution
+---------------------------------------------------------
+
+Select amount of linear travel per revolution. 
+
+.. image:: /images/settings/3-units-per-rev.png
+
+Maximum Speed
+---------------------------------------------------------
+
+Select maximum linear velocity. The maximum allowable linear speed 
+is bounded by the maximum pulse generation frequency. 
+
+.. image:: /images/settings/4-max-speed.png
+
+Acceleration
+---------------------------------------------------------
+
+.. image:: /images/settings/5-acceleration.png
+
+
+Backlash
+---------------------------------------------------------
+
+.. image:: /images/settings/6-backlash.png
+
+Backlash Speed
+---------------------------------------------------------
+
+.. image:: /images/settings/7-backlash-speed.png
+
+Homing Speed
+---------------------------------------------------------
+
+.. image:: /images/settings/8-homing-speed.png
+
+Homing Direction
+---------------------------------------------------------
+
+.. image:: /images/settings/9-homing-direction.png
+
+Backoff Distance
+---------------------------------------------------------
+
+.. image:: /images/settings/10-backoff-distance.png
+
+Position Max
+---------------------------------------------------------
+
+.. image:: /images/settings/11-position-max.png
+
+
+Enable Pin
+---------------------------------------------------------
+
+.. image:: /images/settings/12-enable-pin.png
+
+Direction Pin
+---------------------------------------------------------
+
+.. image:: /images/settings/13-direction-pin.png
+
+Limit Pin
+---------------------------------------------------------
+
+.. image:: /images/settings/14-limit-pin.png
+
+Units
+---------------------------------------------------------
+
+.. image:: /images/settings/15-units.png
+
+Load Defaults
+---------------------------------------------------------
+
+.. image:: /images/settings/16-defaults.png
+
+
+|
+

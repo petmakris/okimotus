@@ -1,0 +1,20 @@
+
+Wiring
+=================================================
+
+The preferred scheme to wire :underline:`axis` to a stepper/servo 
+motor driver is the common anode method while common cathode still possible.
+
+.. https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingReST/Reference/Graphics/Images.html
+
+.. figure:: /images/wiring/common-anode-small.png
+
+   Common anode wiring scheme.
+
+|
+
+.. figure:: /images/wiring/common-cathode-small.png
+
+   Common cathode wiring scheme.
+
+|

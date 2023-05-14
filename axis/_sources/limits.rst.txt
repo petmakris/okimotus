@@ -1,0 +1,18 @@
+Homing
+=================================================
+
+Limits and Homing
+
+
+|
+
+.. image:: /images/limits/limits.png
+
+|
+
+.. image:: /images/limits/homed.png
+
+
+|
+
+

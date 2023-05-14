@@ -1,0 +1,121 @@
+.. role:: underline
+   :class: underline
+
+
+Usage
+=================================================
+
+
+Axis Controller 
+
+
+.. image:: /images/top-home-xsmall.png
+
+|
+
+Keystrokes
+---------------------------
+
+.. list-table:: 
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Keystroke
+     - Single Press
+     - Long Press
+
+   * - ``MENU``
+     - Enable/Disable
+     - Show Settings
+
+   * - ``SHIFT``
+     - Shift mode
+     - 
+
+   * - ``DOWN``
+     - Step (-)
+     - 
+
+   * - ``UP``
+     - Step (+)
+     -
+      
+   * - ``Α-``
+     -
+     - Continuous (-)
+
+   * - ``Α+`` 
+     -
+     - Continuous (+)
+
+   * - ``Β-``
+     - Move (-)
+     -
+
+   * - ``B+`` 
+     - Move (+)
+     - 
+
+   * - ``SHIFT + DOWN``
+     - Step size (-)
+     - 
+
+   * - ``SHIFT + UP``
+     - Step size (+)
+     -
+      
+   * - ``SHIFT + Α-``
+     - 
+     - App. Reset
+
+   * - ``SHIFT + Α+`` 
+     - 
+     - ``App. Reset``
+
+   * - ``SHIFT + Β-``
+     - Zero position (*)
+     -
+
+   * - ``SHIFT + B+`` 
+     - Zero position (*)
+     - 
+
+.. note::
+
+    \* Position cannot be reset when homed
+
+|
+
+
+Settings navigation
+---------------------------
+
+.. list-table:: 
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Keystroke
+     - Single Press
+     - Long Press
+
+   * - ``MENU``
+     - Exit Settings
+     - 
+
+   * - ``DOWN``
+     - Previous
+     - 
+
+   * - ``UP``
+     - Next
+     -
+      
+   * - ``Β-``
+     - Change (-)
+     - Fast change (-)
+
+   * - ``B+``
+     - Change (+)
+     - Fast change (+)
+
+| 

@@ -1,0 +1,160 @@
+.. role:: underline
+   :class: underline
+
+
+Stepper configuration
+=================================================
+
+Axis Controller can produce up to 75000 steps per second (75KHz step rate).
+The maximum output RPM depends on the desired microstepping (`Steps/Rev`). The maximum 
+output linear speed depends additionally on the `Unit/Rev` setting. 
+
+E.g. for microstepping x8 we configure for 1600 `Steps/Rev`. 
+This yields a maximum output RPM of 2812.5.
+
+Additionally, in metric units, for a 5mm ballscrew/leadscrew pitch this translates to 
+14062.5 mm/sec maximum output speed.
+
+|
+
+.. raw:: html
+
+    <embed>
+
+    <html>
+    <head>
+        <style>
+            .demTable {
+                border:1px solid #b3adad;
+                border-collapse:collapse;
+                padding:5px;
+            }
+            .demTable th {
+                border:1px solid #b3adad;
+                padding:5px;
+                background: #f0f0f0;
+                color: #313030;
+            }
+            .demTable .first-column {
+                font-weight: bold;
+                background: #f0f0f0;
+                color: #313030;
+                min-width: 12rem;
+            }
+            .demTable td {
+                border:1px solid #b3adad;
+                text-align: right;
+                padding:5px;
+                background: #ffffff;
+                color: #313030;
+                min-width: 5rem;
+            }
+            div.body td {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="demTable">
+            <tbody>
+                <tr>
+                    <td class="first-column">steps/sec (max)</td>
+                    <td>75000</td>
+                </tr>
+                <tr>
+                    <td class="first-column">mm/rev</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td class="first-column">steps/rev</td>
+                    <td>200</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+    </embed>
+
+
+|
+
+.. raw:: html
+
+    <embed>
+    <html>
+    <head>
+    </head>
+    <body>
+        <table class="demTable">
+            <tbody>
+                <tr>
+                    <td class="first-column">Microstepping</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td class="first-column">steps/rev</td>
+                    <td>200</td>
+                    <td>400</td>
+                    <td>800</td>
+                    <td>1600</td>
+                    <td>3200</td>
+                </tr>
+                <tr>
+                    <td class="first-column">revs/sec (max)</td>
+                    <td>375</td>
+                    <td>187.5</td>
+                    <td>93.75</td>
+                    <td>46.875</td>
+                    <td>23.4375</td>
+                </tr>
+                <tr>
+                    <td class="first-column">revs/min (max)</td>
+                    <td>22500</td>
+                    <td>11250</td>
+                    <td>5625</td>
+                    <td>2812.5</td>
+                    <td>1406.25</td>
+                </tr>
+                <tr>
+                    <td class="first-column">steps/mm</td>
+                    <td>40</td>
+                    <td>80</td>
+                    <td>160</td>
+                    <td>320</td>
+                    <td>640</td>
+                </tr>
+                <tr>
+                    <td class="first-column">mm/sec</td>
+                    <td>1875</td>
+                    <td>937.5</td>
+                    <td>468.75</td>
+                    <td>234.375</td>
+                    <td>117.1875</td>
+                </tr>
+                <tr>
+                    <td class="first-column">mm/minute</td>
+                    <td>112500</td>
+                    <td>56250</td>
+                    <td>28125</td>
+                    <td>14062.5</td>
+                    <td>7031.25</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+    </embed>
+
+
+.. The relevant settings is Axis Controller are 
+
+.. - steps/rev
+.. - units/rev
+.. - max velocity
+.. - max acceleration
+
+|

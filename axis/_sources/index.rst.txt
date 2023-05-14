@@ -1,0 +1,78 @@
+*Axis* Controller
+===========================================
+
+.. role:: underline
+   :class: underline
+
+|
+
+*Axis* is a high-end single motor pulse generator /controller for linear system applications 
+with stepper motors or compatible step/dir/enable controlled servor motors. 
+
+| 
+
+.. image:: /images/top-home-xsmall.png
+
+|
+
+:underline:`Features`:
+
+**Common Step, Dir, Enable, 5V, Fault interface.**
+
+**High step rate**
+
+   * Up to 75KHz
+
+**Microstepping** / **Pitch** / **Backlash**:
+
+   * Configurable steps/rev and units/rev for accurate translation of rotational to linear motion.
+   * Backlash support with configurable backlash compensation speed (current or maximum)
+
+**Controls** / **Jogging**:
+
+   * Continuous movement, after long press of **A-** / **A+**
+   * Controlled movement, while **B-** / **B+** are pressed
+   * Step Mode: cycle through predefined step sizes with **UP**/**DOWN**
+
+**Speed control** 
+
+   * Adjustable Speed/Rpm via potentiometer (even when in motion). Maximum speed is configurable.
+
+**Limit switch support**
+
+   * Supports plain mechanical switches or active proximity switches.
+
+**Homing**
+
+   * The limit switch can used as a *home* switch, a reference poin where the position is zeroed out and motion is then restricted within the bounds of software (virtual) limits.
+
+**Bouncing modes**
+
+   * Reverses the motor on triggering a hardware limit (limit switch) or a software limit (when axis is homed), on Forward, Backward or both directions.  
+
+**Units**
+
+   * *Metric* or *Imperial* which can be changed on the fly.
+
+**Configurable pin directions (Step, Dir, Enable, Limit)**
+
+**Wide power supply input support 9 to 27 VDC**
+
+
+|
+
+
+
+
+Contents
+===========================================
+.. toctree::
+   :maxdepth: 1
+
+   usage
+   stepper
+   limits
+   wiring
+   settings
+
+|
