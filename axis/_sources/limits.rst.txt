@@ -1,16 +1,28 @@
 Homing
 =================================================
 
-Limits and Homing
+Limit switches for constraining motion or bouncing
+------------------------------------------------------------
+
+OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS 
 
 
 |
 
-.. image:: /images/limits/limits.png
+.. image:: /images/limits/limits-gray.png
 
 |
 
-.. image:: /images/limits/homed.png
+Limit switches for constraining motion or bouncing
+-------------------------------------------------------------
+
+
+Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo 
+
+
+|
+
+.. image:: /images/limits/homed-gray.png
 
 
 |

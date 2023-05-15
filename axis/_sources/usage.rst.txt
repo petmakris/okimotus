@@ -73,11 +73,11 @@ Keystrokes
      - ``App. Reset``
 
    * - ``SHIFT + Β-``
-     - Zero position (*)
+     - Reset position (*)
      -
 
    * - ``SHIFT + B+`` 
-     - Zero position (*)
+     - Reset position (*)
      - 
 
 .. note::
@@ -91,7 +91,7 @@ Settings navigation
 ---------------------------
 
 .. list-table:: 
-   :widths: 25 25 25
+   :widths: 10 10 10
    :header-rows: 1
 
    * - Keystroke
