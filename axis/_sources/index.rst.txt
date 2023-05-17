@@ -11,7 +11,10 @@ with stepper motors or compatible step/dir/enable controlled servor motors.
 
 | 
 
-.. image:: /images/top-home-xsmall.png
+.. image:: /images/product.png
+   :width: 600px
+   :align: center 
+
 
 |
 
