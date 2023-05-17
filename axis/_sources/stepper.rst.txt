@@ -86,27 +86,3 @@ Additionally, in metric units, for a 5mm ballscrew/leadscrew pitch this translat
      - 7031.25
 
 |
-
-.. Codes
-.. =====
-
-.. ::
-
-..     gmt begin map
-..     gmt basemap -R0/10/0/10 -JX10c/10c -Baf
-..     gmt end
-
-Math
-====
-
-reST also supports LaTeX-style math.
-
-This is an inline math :math:`x^2+y^2=z^2`.
-
-For long equations, use the ``math`` directive:
-
-.. math::
-
-   \gamma = \sqrt{(\alpha^2 + \beta^2)}
-
-

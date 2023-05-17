@@ -4,12 +4,15 @@ Homing
 Limit switches for constraining motion or bouncing
 ------------------------------------------------------------
 
-OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS OJS 
 
 
 |
 
-.. image:: /images/limits/limits-gray.png
+.. image:: /images/limits/limits.png
+    :class: only-light
+
+.. image:: /images/limits/limits-inverted.png
+    :class: only-dark
 
 |
 
@@ -17,14 +20,16 @@ Limit switches for constraining motion or bouncing
 -------------------------------------------------------------
 
 
-Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo 
-
 
 |
 
-.. image:: /images/limits/homed-gray.png
+.. image:: /images/limits/homed.png
+    :class: only-light
 
+.. image:: /images/limits/homed-inverted.png
+    :class: only-dark
 
 |
 
+|
 

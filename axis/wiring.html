@@ -346,21 +346,55 @@ document.write(`
 <h1>Wiring<a class="headerlink" href="#wiring" title="Permalink to this heading">#</a></h1>
 <p>The preferred scheme to wire <span class="underline">axis</span> to a stepper/servo
 motor driver is the common anode method while common cathode still possible.</p>
-<figure class="align-default" id="id1">
-<img alt="_images/common-anode-small.png" src="_images/common-anode-small.png" />
-<figcaption>
-<p><span class="caption-text">Common anode wiring scheme.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p>Configuring</p>
+<table class="table">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Sensor type</p></th>
+<th class="head"><p>Limit pin trigger</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>NPN NO</p></td>
+<td><p>Falling edge</p></td>
+</tr>
+<tr class="row-odd"><td><p>NPN NC</p></td>
+<td><p>Rising edge</p></td>
+</tr>
+<tr class="row-even"><td><p>PNP NO</p></td>
+<td><p>Rising edge</p></td>
+</tr>
+<tr class="row-odd"><td><p>PNP NC</p></td>
+<td><p>Falling edge</p></td>
+</tr>
+</tbody>
+</table>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<figure class="align-default" id="id2">
-<img alt="_images/common-cathode-small.png" src="_images/common-cathode-small.png" />
-<figcaption>
-<p><span class="caption-text">Common cathode wiring scheme.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<a class="only-light reference internal image-reference" href="_images/common-anode.png"><img alt="_images/common-anode.png" class="only-light" src="_images/common-anode.png" style="width: 464.5px; height: 248.0px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/common-anode-inverted.png"><img alt="_images/common-anode-inverted.png" class="only-dark" src="_images/common-anode-inverted.png" style="width: 464.5px; height: 248.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="only-light reference internal image-reference" href="_images/common-cathode.png"><img alt="_images/common-cathode.png" class="only-light" src="_images/common-cathode.png" style="width: 464.5px; height: 246.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/common-cathode-inverted.png"><img alt="_images/common-cathode-inverted.png" class="only-dark" src="_images/common-cathode-inverted.png" style="width: 464.5px; height: 246.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="only-light reference internal image-reference" href="_images/limit-switch-inductive.png"><img alt="_images/limit-switch-inductive.png" class="only-light" src="_images/limit-switch-inductive.png" style="width: 399.5px; height: 179.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/limit-switch-inductive-inverted.png"><img alt="_images/limit-switch-inductive-inverted.png" class="only-dark" src="_images/limit-switch-inductive-inverted.png" style="width: 399.5px; height: 179.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="only-light reference internal image-reference" href="_images/limit-switch-mechanical.png"><img alt="_images/limit-switch-mechanical.png" class="only-light" src="_images/limit-switch-mechanical.png" style="width: 316.0px; height: 177.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/limit-switch-mechanical-inverted.png"><img alt="_images/limit-switch-mechanical-inverted.png" class="only-dark" src="_images/limit-switch-mechanical-inverted.png" style="width: 316.0px; height: 177.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
