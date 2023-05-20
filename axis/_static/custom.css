@@ -1,9 +1,0 @@
-html[data-theme="light"] {
-
-    background: blue;
-}
-
-html[data-theme="dark"] {
-
-    background: green;
-}
