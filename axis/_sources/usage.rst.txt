@@ -1,7 +1,3 @@
-.. role:: underline
-   :class: underline
-
-
 Usage
 =================================================
 
@@ -9,15 +5,9 @@ Usage
 Axis Controller 
 
 
-.. image:: /images/product.png
-   :class: only-light
-   :align: center
-   :width: 500px
-
-.. image:: /images/product.png
-   :class: only-dark
+.. image:: /images/product/front-shaded.png
+   :width: 600px
    :align: center 
-   :width: 500px
 
 |
 

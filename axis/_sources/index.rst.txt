@@ -1,9 +1,6 @@
 *Axis* Controller
 ===========================================
 
-.. role:: underline
-   :class: underline
-
 |
 
 *Axis* is a high-end single motor pulse generator /controller for linear system applications 
@@ -11,19 +8,14 @@ with stepper motors or compatible step/dir/enable controlled servor motors.
 
 | 
 
-.. image:: /images/product.png
-   :class: only-light
-   :align: center
-   :width: 500px
-
-.. image:: /images/product.png
-   :class: only-dark
+.. image:: /images/product/front-shaded.png
+   :width: 600px
    :align: center 
-   :width: 500px
+
 
 |
 
-:underline:`Features`:
+Features:
 
 **Common Step, Dir, Enable, 5V, Fault interface.**
 
