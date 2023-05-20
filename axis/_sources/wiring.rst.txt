@@ -8,6 +8,7 @@ motor driver is the common anode method while common cathode still possible.
 .. image:: /images/product/back-shaded.png
    :width: 600px
    :align: center 
+   :class: dark-light
 
 |
 

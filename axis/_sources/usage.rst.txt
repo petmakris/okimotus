@@ -8,6 +8,7 @@ Axis Controller
 .. image:: /images/product/front-shaded.png
    :width: 600px
    :align: center 
+   :class: dark-light
 
 |
 

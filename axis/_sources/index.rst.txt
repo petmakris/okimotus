@@ -11,7 +11,7 @@ with stepper motors or compatible step/dir/enable controlled servor motors.
 .. image:: /images/product/front-shaded.png
    :width: 600px
    :align: center 
-
+   :class: dark-light
 
 |
 
