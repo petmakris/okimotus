@@ -4,14 +4,19 @@
 |
 
 *Axis* is a high-end single motor pulse generator/controller for linear system applications 
-using stepper or other step/dir controlled servo motors. 
+using stepper or compatible step/dir driven servo motors. 
 
 | 
 
-.. image:: /images/product/front-shaded.png
-   :width: 600px
+.. image:: /images/product.png
+   :class: only-light
+   :align: center
+   :width: 500px
+
+.. image:: /images/product.png
+   :class: only-dark
    :align: center 
-   :class: dark-light
+   :width: 500px
 
 |
 

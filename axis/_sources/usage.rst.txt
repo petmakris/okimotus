@@ -5,10 +5,15 @@ Usage
 Axis Controller 
 
 
-.. image:: /images/product/front-shaded.png
-   :width: 600px
+.. image:: /images/product.png
+   :class: only-light
+   :align: center
+   :width: 500px
+
+.. image:: /images/product.png
+   :class: only-dark
    :align: center 
-   :class: dark-light
+   :width: 500px
 
 |
 
