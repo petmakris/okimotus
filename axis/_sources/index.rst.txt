@@ -3,8 +3,19 @@
 
 |
 
-*Axis* is a high-end single motor pulse generator/controller for linear system applications 
-using stepper or compatible step/dir driven servo motors. 
+*Axis* is a high-end, single motor, jog controller for motors controller by a step/dir interface. 
+The user interface allows for easy control of the motor's position, 
+with a single knob for speed control and buttons for controlling direction and step size and much more.
+
+There three modes of operation available:
+
+- Degrees (Angular): Tracks the position in degrees, with a configurable number of steps per revolution.
+
+
+- Millimeters (Linear/Metric): Tracks the position in millimeters, with a configurable number of steps per millimeter by specifying the pitch of the leadscrew/ballscrew the motor attaches to in millimeters.
+
+- Inches (Linear/Imperial): Tracks the position in inches, with a configurable number of steps per inch.
+
 
 | 
 
