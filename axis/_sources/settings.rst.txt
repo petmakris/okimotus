@@ -10,9 +10,11 @@ Bounce
 Select the bouncing behavior. 
 
 .. image:: /images/settings/light/1-bounce.png
+   :scale: 75%
    :class: only-light
 
 .. image:: /images/settings/dark/1-bounce.png
+   :scale: 75%
    :class: only-dark
 
 
@@ -22,6 +24,7 @@ Steps per Revolution
 Select number of steps per revolution. 
 
 .. image:: /images/settings/light/2-steps-per-rev.png
+   :scale: 75%
 
 
 Units per Revolution
@@ -30,6 +33,8 @@ Units per Revolution
 Select amount of linear travel per revolution. 
 
 .. image:: /images/settings/light/3-units-per-rev.png
+   :scale: 75%
+
 
 Maximum Speed
 ---------------------------------------------------------
@@ -38,68 +43,81 @@ Select maximum linear velocity. The maximum allowable linear speed
 is bounded by the maximum pulse generation frequency. 
 
 .. image:: /images/settings/light/4-max-speed.png
+   :scale: 75%
 
 Acceleration
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/5-acceleration.png
+   :scale: 75%
 
 
 Backlash
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/6-backlash.png
+   :scale: 75%
 
 Backlash Speed
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/7-backlash-speed.png
+   :scale: 75%
 
 Homing Speed
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/8-homing-speed.png
+   :scale: 75%
 
 Homing Direction
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/9-homing-direction.png
+   :scale: 75%
 
 Backoff Distance
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/10-backoff-distance.png
+   :scale: 75%
 
 Position Max
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/11-position-max.png
+   :scale: 75%
 
 
 Enable Pin
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/12-enable-pin.png
+   :scale: 75%
 
 Direction Pin
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/13-direction-pin.png
+   :scale: 75%
 
 Limit Pin
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/14-limit-switch-pin.png
+   :scale: 75%
 
 Units
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/15-units.png
+   :scale: 75%
 
 Load Defaults
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/16-defaults.png
+   :scale: 75%
 
 
 |

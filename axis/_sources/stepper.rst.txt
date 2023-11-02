@@ -1,15 +1,13 @@
 Stepper configuration
 =================================================
 
-Axis Controller can produce up to 75000 steps per second (75KHz step rate).
-The maximum output RPM depends on the desired microstepping (`Steps/Rev`). The maximum
+Axis can produce up to 75000 steps per second (75KHz step rate).
+The maximum output RPM depends on the desired micro-stepping (`Steps/Rev`). For linear applications, the maximum
 output linear speed depends additionally on the `Unit/Rev` setting.
 
-E.g. for microstepping x8 we configure for 1600 `Steps/Rev`.
-This yields a maximum output RPM of 2812.5.
+E.g. With 8x micro-stepping we configure for 1600 `Steps/Rev` and this yields a maximum output RPM of 2812.5.
 
-Additionally, in metric units, for a 5mm ballscrew/leadscrew pitch this translates to
-14062.5 mm/sec maximum output speed.
+Additionally, in linear mode and in metric units, assuming a 5mm ballscrew/leadscrew pitch (`Unit/Rev` is 5mm) results in 14062.5 mm/sec maximum output speed.
 
 |
 
@@ -32,7 +30,7 @@ Additionally, in metric units, for a 5mm ballscrew/leadscrew pitch this translat
    :widths: 25 25 25 25 25 25
    :header-rows: 0
 
-   * - **Microstepping**
+   * - **Micro-stepping**
      - 1
      - 2
      - 4

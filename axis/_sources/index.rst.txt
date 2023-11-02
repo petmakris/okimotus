@@ -11,7 +11,6 @@ There three modes of operation available:
 
 - Degrees (Angular): Tracks the position in degrees, with a configurable number of steps per revolution.
 
-
 - Millimeters (Linear/Metric): Tracks the position in millimeters, with a configurable number of steps per millimeter by specifying the pitch of the leadscrew/ballscrew the motor attaches to in millimeters.
 
 - Inches (Linear/Imperial): Tracks the position in inches, with a configurable number of steps per inch.
@@ -76,8 +75,6 @@ Features:
 
 
 |
-
-
 
 
 Contents

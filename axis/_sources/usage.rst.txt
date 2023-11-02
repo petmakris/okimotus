@@ -74,7 +74,7 @@ Keystrokes
 
    * - ``SHIFT + Α+`` 
      - 
-     - ``App. Reset``
+     - App. Reset
 
    * - ``SHIFT + Β-``
      - Reset position (*)

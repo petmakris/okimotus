@@ -2,31 +2,34 @@ Homing
 =================================================
 
 Limit switches for constraining motion or bouncing
-------------------------------------------------------------
 
 
 
 |
 
 .. image:: /images/limits/limits.png
+    :scale: 80 %
     :class: only-light
 
 .. image:: /images/limits/limits-inverted.png
+    :scale: 80 %
     :class: only-dark
 
 |
 
+
 Limit switches for constraining motion or bouncing
--------------------------------------------------------------
 
 
 
 |
 
 .. image:: /images/limits/homed.png
+    :scale: 80 %
     :class: only-light
 
 .. image:: /images/limits/homed-inverted.png
+    :scale: 80 %
     :class: only-dark
 
 |

@@ -222,10 +222,6 @@ document.write(`
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
-      <span class="fa-solid fa-outdent"></span>
-    </label>
-  
 </div>
 
     </nav>
@@ -360,13 +356,11 @@ document.write(`
                   
   <section id="stepper-configuration">
 <h1>Stepper configuration<a class="headerlink" href="#stepper-configuration" title="Permalink to this heading">#</a></h1>
-<p>Axis Controller can produce up to 75000 steps per second (75KHz step rate).
-The maximum output RPM depends on the desired microstepping (<cite>Steps/Rev</cite>). The maximum
+<p>Axis can produce up to 75000 steps per second (75KHz step rate).
+The maximum output RPM depends on the desired micro-stepping (<cite>Steps/Rev</cite>). For linear applications, the maximum
 output linear speed depends additionally on the <cite>Unit/Rev</cite> setting.</p>
-<p>E.g. for microstepping x8 we configure for 1600 <cite>Steps/Rev</cite>.
-This yields a maximum output RPM of 2812.5.</p>
-<p>Additionally, in metric units, for a 5mm ballscrew/leadscrew pitch this translates to
-14062.5 mm/sec maximum output speed.</p>
+<p>E.g. With 8x micro-stepping we configure for 1600 <cite>Steps/Rev</cite> and this yields a maximum output RPM of 2812.5.</p>
+<p>Additionally, in linear mode and in metric units, assuming a 5mm ballscrew/leadscrew pitch (<cite>Unit/Rev</cite> is 5mm) results in 14062.5 mm/sec maximum output speed.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -400,7 +394,7 @@ This yields a maximum output RPM of 2812.5.</p>
 <col style="width: 16.7%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>Microstepping</strong></p></td>
+<tr class="row-odd"><td><p><strong>Micro-stepping</strong></p></td>
 <td><p>1</p></td>
 <td><p>2</p></td>
 <td><p>4</p></td>
@@ -490,18 +484,6 @@ This yields a maximum output RPM of 2812.5.</p>
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="tocsection sourcelink">
-    <a href="_sources/stepper.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
-
-</div></div>
               
             
           </div>
