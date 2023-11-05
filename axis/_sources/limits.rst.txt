@@ -1,9 +1,9 @@
-Homing
+.. _Limits & Homing:
+
+Limits & Homing
 =================================================
 
 Limit switches for constraining motion or bouncing
-
-
 
 |
 
@@ -19,8 +19,6 @@ Limit switches for constraining motion or bouncing
 
 
 Limit switches for constraining motion or bouncing
-
-
 
 |
 

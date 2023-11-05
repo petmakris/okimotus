@@ -2,12 +2,21 @@ Settings
 =======================================
 
 .. http://avtanski.net/projects/lcd/
+.. select the small size
 
+|
 
 Bounce
 ---------------------------------------------------------
 
-Select the bouncing behavior. 
+Select the bouncing behavior, applies only when *home position is known*. 
+When the home position is known then when `moving in continuous mode`:
+
+* ``None`` will not bounce at all
+* ``Backward`` will bounce when moving backward at zero position.
+* ``Forward`` will bounce when moving backward at position max (see setting Position Max).
+* ``Both`` (*default*): Backward and Forward behavior combined.
+
 
 .. image:: /images/settings/light/1-bounce.png
    :scale: 75%
@@ -17,108 +26,279 @@ Select the bouncing behavior.
    :scale: 75%
    :class: only-dark
 
+|
 
 Steps per Revolution
 ---------------------------------------------------------
 
-Select number of steps per revolution. 
+Total number of steps per revolution, including microstepping for stepper motors.
 
 .. image:: /images/settings/light/2-steps-per-rev.png
    :scale: 75%
+   :class: only-light
 
+.. image:: /images/settings/dark/2-steps-per-rev.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Units per Revolution
 ---------------------------------------------------------
 
-Select amount of linear travel per revolution. 
+* ``Metric`` (*linear*): millimeters of linear travel per revolution. 
+* ``Imperial`` (*linear*): inches of linear travel, per revolution.
+* ``Degrees`` (*angular*): degrees of rotation per revolution.
+
+In angular mode it is fixed at 360 degrees per revolution (unit = 1 degree).
 
 .. image:: /images/settings/light/3-units-per-rev.png
    :scale: 75%
+   :class: only-light
 
+.. image:: /images/settings/dark/3-units-per-rev.png
+   :scale: 75%
+   :class: only-dark
+
+|
+
+.. _Maximum Speed:
 
 Maximum Speed
 ---------------------------------------------------------
 
-Select maximum linear velocity. The maximum allowable linear speed 
-is bounded by the maximum pulse generation frequency. 
+The maximum allowable speed is bounded by the maximum pulse generation frequency.
+
+(See :ref:`Stepper configuration` section for details).  
 
 .. image:: /images/settings/light/4-max-speed.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/4-max-speed.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Acceleration
 ---------------------------------------------------------
 
 .. image:: /images/settings/light/5-acceleration.png
    :scale: 75%
+   :class: only-light
 
+.. image:: /images/settings/dark/5-acceleration.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Backlash
 ---------------------------------------------------------
 
+The backlash to apply in selected units when changing direction of movement/rotation
+
 .. image:: /images/settings/light/6-backlash.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/6-backlash.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Backlash Speed
 ---------------------------------------------------------
 
+Select between `Current` and `Maximum`.
+
+* ``Current`` use current speed as configured by the user controlled potentiometer.
+* ``Maximum`` use maximum speed as configured by the :ref:`Maximum Speed` setting.
+
+
 .. image:: /images/settings/light/7-backlash-speed.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/7-backlash-speed.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Homing Speed
 ---------------------------------------------------------
 
+The speed to use while searching for home position.
+
+(See :ref:`Limits & Homing` section for details).
+
 .. image:: /images/settings/light/8-homing-speed.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/8-homing-speed.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Homing Direction
 ---------------------------------------------------------
 
+Set the homing direction to either ``Forward`` or ``Backward``.
+
+
 .. image:: /images/settings/light/9-homing-direction.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/9-homing-direction.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Backoff Distance
 ---------------------------------------------------------
 
+The distance to move back from the homing switch after it is triggered.
+
 .. image:: /images/settings/light/10-backoff-distance.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/10-backoff-distance.png
+   :scale: 75%
+   :class: only-dark
+
+|
+
+.. _Position Max:
 
 Position Max
 ---------------------------------------------------------
 
+The maximum position allowed to move forward, away from 
+the home position (in current units).
+
+*Applies only when the home position is known*.
+
 .. image:: /images/settings/light/11-position-max.png
    :scale: 75%
+   :class: only-light
 
+.. image:: /images/settings/dark/11-position-max.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Enable Pin
 ---------------------------------------------------------
 
+Set if the enable pin should be active high or active low.
+
 .. image:: /images/settings/light/12-enable-pin.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/12-enable-pin.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Direction Pin
 ---------------------------------------------------------
 
+Set if the direction pin should be active high or active low.
+
 .. image:: /images/settings/light/13-direction-pin.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/13-direction-pin.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Limit Pin
 ---------------------------------------------------------
 
+Set the behavior of the limit switch pin. The external limit is triggered:
+
+* ``Falling Edge`` on a transition from a logic high (5 Volts) to logic low (0 Volts).
+* ``Rising Edge`` on a transition from a logic low (0 Volts) to logic high (5 Volts).
+
 .. image:: /images/settings/light/14-limit-switch-pin.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/14-limit-switch-pin.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Units
 ---------------------------------------------------------
 
+Set the units to use. Changing the device units will reset all the unit related settings to their defaults 
+and additionally reset the device status, e.g set position to zero and forget the home position
+
+* ``Millimeters`` (*metric, linear mode*): Steps: ``0.01 mm``, ``0.01 mm``, ``0.1 mm``, ``0.5 mm`` and ``1.0 mm``.  
+* ``Inches``  (*imperial, linear mode*): Steps: ``0.001 in``, ``0.005 in``, ``0.01 in``, ``0.05 in`` and ``0.1 in``. 
+* ``Degrees``  (*angular mode*): Steps from ``360/1 deg`` (1 step is 360 degrees) up to ``360/3600 deg`` (1 step is 0.1 degree).
+
+
 .. image:: /images/settings/light/15-units.png
    :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/15-units.png
+   :scale: 75%
+   :class: only-dark
+
+.. note::
+   Requires a long press on the ``B`` type buttons to confirm the action.
+
+|
+
+Contrast
+---------------------------------------------------------
+
+Set the display contrast.
+
+.. image:: /images/settings/light/16-contrast.png
+   :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/16-contrast.png
+   :scale: 75%
+   :class: only-dark
+
+|
 
 Load Defaults
 ---------------------------------------------------------
 
-.. image:: /images/settings/light/16-defaults.png
-   :scale: 75%
+Reset all settings to their defaults and reboot the device.
 
+
+.. image:: /images/settings/light/17-defaults.png
+   :scale: 75%
+   :class: only-light
+
+.. image:: /images/settings/dark/17-defaults.png
+   :scale: 75%
+   :class: only-dark
+
+.. note::
+   Requires a long press on the ``B`` type buttons to confirm the action.
 
 |
 

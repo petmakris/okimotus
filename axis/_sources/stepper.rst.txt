@@ -1,3 +1,5 @@
+.. _Stepper configuration:
+
 Stepper configuration
 =================================================
 

@@ -151,7 +151,7 @@
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="limits.html">
-                        Homing
+                        Limits & Homing
                       </a>
                     </li>
                 
@@ -266,7 +266,7 @@ document.write(`
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="limits.html">
-                        Homing
+                        Limits & Homing
                       </a>
                     </li>
                 
@@ -359,75 +359,195 @@ document.write(`
                   
   <section id="settings">
 <h1>Settings<a class="headerlink" href="#settings" title="Permalink to this heading">#</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <section id="bounce">
 <h2>Bounce<a class="headerlink" href="#bounce" title="Permalink to this heading">#</a></h2>
-<p>Select the bouncing behavior.</p>
+<p>Select the bouncing behavior, applies only when <em>home position is known</em>.
+When the home position is known then when <cite>moving in continuous mode</cite>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code> will not bounce at all</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Backward</span></code> will bounce when moving backward at zero position.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Forward</span></code> will bounce when moving backward at position max (see setting Position Max).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Both</span></code> (<em>default</em>): Backward and Forward behavior combined.</p></li>
+</ul>
 <a class="only-light reference internal image-reference" href="_images/1-bounce.png"><img alt="_images/1-bounce.png" class="only-light" src="_images/1-bounce.png" style="width: 280.5px; height: 67.5px;" /></a>
 <a class="only-dark reference internal image-reference" href="_images/1-bounce1.png"><img alt="_images/1-bounce1.png" class="only-dark" src="_images/1-bounce1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="steps-per-revolution">
 <h2>Steps per Revolution<a class="headerlink" href="#steps-per-revolution" title="Permalink to this heading">#</a></h2>
-<p>Select number of steps per revolution.</p>
-<a class="reference internal image-reference" href="_images/2-steps-per-rev.png"><img alt="_images/2-steps-per-rev.png" src="_images/2-steps-per-rev.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>Total number of steps per revolution, including microstepping for stepper motors.</p>
+<a class="only-light reference internal image-reference" href="_images/2-steps-per-rev.png"><img alt="_images/2-steps-per-rev.png" class="only-light" src="_images/2-steps-per-rev.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/2-steps-per-rev1.png"><img alt="_images/2-steps-per-rev1.png" class="only-dark" src="_images/2-steps-per-rev1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="units-per-revolution">
 <h2>Units per Revolution<a class="headerlink" href="#units-per-revolution" title="Permalink to this heading">#</a></h2>
-<p>Select amount of linear travel per revolution.</p>
-<a class="reference internal image-reference" href="_images/3-units-per-rev.png"><img alt="_images/3-units-per-rev.png" src="_images/3-units-per-rev.png" style="width: 280.5px; height: 67.5px;" /></a>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Metric</span></code> (<em>linear</em>): millimeters of linear travel per revolution.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Imperial</span></code> (<em>linear</em>): inches of linear travel, per revolution.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Degrees</span></code> (<em>angular</em>): degrees of rotation per revolution.</p></li>
+</ul>
+<p>In angular mode it is fixed at 360 degrees per revolution (unit = 1 degree).</p>
+<a class="only-light reference internal image-reference" href="_images/3-units-per-rev.png"><img alt="_images/3-units-per-rev.png" class="only-light" src="_images/3-units-per-rev.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/3-units-per-rev1.png"><img alt="_images/3-units-per-rev1.png" class="only-dark" src="_images/3-units-per-rev1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="maximum-speed">
-<h2>Maximum Speed<a class="headerlink" href="#maximum-speed" title="Permalink to this heading">#</a></h2>
-<p>Select maximum linear velocity. The maximum allowable linear speed
-is bounded by the maximum pulse generation frequency.</p>
-<a class="reference internal image-reference" href="_images/4-max-speed.png"><img alt="_images/4-max-speed.png" src="_images/4-max-speed.png" style="width: 280.5px; height: 67.5px;" /></a>
+<span id="id1"></span><h2>Maximum Speed<a class="headerlink" href="#maximum-speed" title="Permalink to this heading">#</a></h2>
+<p>The maximum allowable speed is bounded by the maximum pulse generation frequency.</p>
+<p>(See <a class="reference internal" href="stepper.html#stepper-configuration"><span class="std std-ref">Stepper configuration</span></a> section for details).</p>
+<a class="only-light reference internal image-reference" href="_images/4-max-speed.png"><img alt="_images/4-max-speed.png" class="only-light" src="_images/4-max-speed.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/4-max-speed1.png"><img alt="_images/4-max-speed1.png" class="only-dark" src="_images/4-max-speed1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="acceleration">
 <h2>Acceleration<a class="headerlink" href="#acceleration" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/5-acceleration.png"><img alt="_images/5-acceleration.png" src="_images/5-acceleration.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-light reference internal image-reference" href="_images/5-acceleration.png"><img alt="_images/5-acceleration.png" class="only-light" src="_images/5-acceleration.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/5-acceleration1.png"><img alt="_images/5-acceleration1.png" class="only-dark" src="_images/5-acceleration1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="backlash">
 <h2>Backlash<a class="headerlink" href="#backlash" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/6-backlash.png"><img alt="_images/6-backlash.png" src="_images/6-backlash.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>The backlash to apply in selected units when changing direction of movement/rotation</p>
+<a class="only-light reference internal image-reference" href="_images/6-backlash.png"><img alt="_images/6-backlash.png" class="only-light" src="_images/6-backlash.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/6-backlash1.png"><img alt="_images/6-backlash1.png" class="only-dark" src="_images/6-backlash1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="backlash-speed">
 <h2>Backlash Speed<a class="headerlink" href="#backlash-speed" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/7-backlash-speed.png"><img alt="_images/7-backlash-speed.png" src="_images/7-backlash-speed.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>Select between <cite>Current</cite> and <cite>Maximum</cite>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Current</span></code> use current speed as configured by the user controlled potentiometer.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Maximum</span></code> use maximum speed as configured by the <a class="reference internal" href="#maximum-speed"><span class="std std-ref">Maximum Speed</span></a> setting.</p></li>
+</ul>
+<a class="only-light reference internal image-reference" href="_images/7-backlash-speed.png"><img alt="_images/7-backlash-speed.png" class="only-light" src="_images/7-backlash-speed.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/7-backlash-speed1.png"><img alt="_images/7-backlash-speed1.png" class="only-dark" src="_images/7-backlash-speed1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="homing-speed">
 <h2>Homing Speed<a class="headerlink" href="#homing-speed" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/8-homing-speed.png"><img alt="_images/8-homing-speed.png" src="_images/8-homing-speed.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>The speed to use while searching for home position.</p>
+<p>(See <a class="reference internal" href="limits.html#limits-homing"><span class="std std-ref">Limits &amp; Homing</span></a> section for details).</p>
+<a class="only-light reference internal image-reference" href="_images/8-homing-speed.png"><img alt="_images/8-homing-speed.png" class="only-light" src="_images/8-homing-speed.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/8-homing-speed1.png"><img alt="_images/8-homing-speed1.png" class="only-dark" src="_images/8-homing-speed1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="homing-direction">
 <h2>Homing Direction<a class="headerlink" href="#homing-direction" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/9-homing-direction.png"><img alt="_images/9-homing-direction.png" src="_images/9-homing-direction.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>Set the homing direction to either <code class="docutils literal notranslate"><span class="pre">Forward</span></code> or <code class="docutils literal notranslate"><span class="pre">Backward</span></code>.</p>
+<a class="only-light reference internal image-reference" href="_images/9-homing-direction.png"><img alt="_images/9-homing-direction.png" class="only-light" src="_images/9-homing-direction.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/9-homing-direction1.png"><img alt="_images/9-homing-direction1.png" class="only-dark" src="_images/9-homing-direction1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="backoff-distance">
 <h2>Backoff Distance<a class="headerlink" href="#backoff-distance" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/10-backoff-distance.png"><img alt="_images/10-backoff-distance.png" src="_images/10-backoff-distance.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>The distance to move back from the homing switch after it is triggered.</p>
+<a class="only-light reference internal image-reference" href="_images/10-backoff-distance.png"><img alt="_images/10-backoff-distance.png" class="only-light" src="_images/10-backoff-distance.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/10-backoff-distance1.png"><img alt="_images/10-backoff-distance1.png" class="only-dark" src="_images/10-backoff-distance1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="position-max">
-<h2>Position Max<a class="headerlink" href="#position-max" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/11-position-max.png"><img alt="_images/11-position-max.png" src="_images/11-position-max.png" style="width: 280.5px; height: 67.5px;" /></a>
+<span id="id2"></span><h2>Position Max<a class="headerlink" href="#position-max" title="Permalink to this heading">#</a></h2>
+<p>The maximum position allowed to move forward, away from
+the home position (in current units).</p>
+<p><em>Applies only when the home position is known</em>.</p>
+<a class="only-light reference internal image-reference" href="_images/11-position-max.png"><img alt="_images/11-position-max.png" class="only-light" src="_images/11-position-max.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/11-position-max1.png"><img alt="_images/11-position-max1.png" class="only-dark" src="_images/11-position-max1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="enable-pin">
 <h2>Enable Pin<a class="headerlink" href="#enable-pin" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/12-enable-pin.png"><img alt="_images/12-enable-pin.png" src="_images/12-enable-pin.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>Set if the enable pin should be active high or active low.</p>
+<a class="only-light reference internal image-reference" href="_images/12-enable-pin.png"><img alt="_images/12-enable-pin.png" class="only-light" src="_images/12-enable-pin.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/12-enable-pin1.png"><img alt="_images/12-enable-pin1.png" class="only-dark" src="_images/12-enable-pin1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="direction-pin">
 <h2>Direction Pin<a class="headerlink" href="#direction-pin" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/13-direction-pin.png"><img alt="_images/13-direction-pin.png" src="_images/13-direction-pin.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>Set if the direction pin should be active high or active low.</p>
+<a class="only-light reference internal image-reference" href="_images/13-direction-pin.png"><img alt="_images/13-direction-pin.png" class="only-light" src="_images/13-direction-pin.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/13-direction-pin1.png"><img alt="_images/13-direction-pin1.png" class="only-dark" src="_images/13-direction-pin1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="limit-pin">
 <h2>Limit Pin<a class="headerlink" href="#limit-pin" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/14-limit-switch-pin.png"><img alt="_images/14-limit-switch-pin.png" src="_images/14-limit-switch-pin.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>Set the behavior of the limit switch pin. The external limit is triggered:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Falling</span> <span class="pre">Edge</span></code> on a transition from a logic high (5 Volts) to logic low (0 Volts).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Rising</span> <span class="pre">Edge</span></code> on a transition from a logic low (0 Volts) to logic high (5 Volts).</p></li>
+</ul>
+<a class="only-light reference internal image-reference" href="_images/14-limit-switch-pin.png"><img alt="_images/14-limit-switch-pin.png" class="only-light" src="_images/14-limit-switch-pin.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/14-limit-switch-pin1.png"><img alt="_images/14-limit-switch-pin1.png" class="only-dark" src="_images/14-limit-switch-pin1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="units">
 <h2>Units<a class="headerlink" href="#units" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/15-units.png"><img alt="_images/15-units.png" src="_images/15-units.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>Set the units to use. Changing the device units will reset all the unit related settings to their defaults
+and additionally reset the device status, e.g set position to zero and forget the home position</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Millimeters</span></code> (<em>metric, linear mode</em>): Steps: <code class="docutils literal notranslate"><span class="pre">0.01</span> <span class="pre">mm</span></code>, <code class="docutils literal notranslate"><span class="pre">0.01</span> <span class="pre">mm</span></code>, <code class="docutils literal notranslate"><span class="pre">0.1</span> <span class="pre">mm</span></code>, <code class="docutils literal notranslate"><span class="pre">0.5</span> <span class="pre">mm</span></code> and <code class="docutils literal notranslate"><span class="pre">1.0</span> <span class="pre">mm</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Inches</span></code>  (<em>imperial, linear mode</em>): Steps: <code class="docutils literal notranslate"><span class="pre">0.001</span> <span class="pre">in</span></code>, <code class="docutils literal notranslate"><span class="pre">0.005</span> <span class="pre">in</span></code>, <code class="docutils literal notranslate"><span class="pre">0.01</span> <span class="pre">in</span></code>, <code class="docutils literal notranslate"><span class="pre">0.05</span> <span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">0.1</span> <span class="pre">in</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Degrees</span></code>  (<em>angular mode</em>): Steps from <code class="docutils literal notranslate"><span class="pre">360/1</span> <span class="pre">deg</span></code> (1 step is 360 degrees) up to <code class="docutils literal notranslate"><span class="pre">360/3600</span> <span class="pre">deg</span></code> (1 step is 0.1 degree).</p></li>
+</ul>
+<a class="only-light reference internal image-reference" href="_images/15-units.png"><img alt="_images/15-units.png" class="only-light" src="_images/15-units.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/15-units1.png"><img alt="_images/15-units1.png" class="only-dark" src="_images/15-units1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Requires a long press on the <code class="docutils literal notranslate"><span class="pre">B</span></code> type buttons to confirm the action.</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="contrast">
+<h2>Contrast<a class="headerlink" href="#contrast" title="Permalink to this heading">#</a></h2>
+<p>Set the display contrast.</p>
+<a class="only-light reference internal image-reference" href="_images/16-contrast.png"><img alt="_images/16-contrast.png" class="only-light" src="_images/16-contrast.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/16-contrast1.png"><img alt="_images/16-contrast1.png" class="only-dark" src="_images/16-contrast1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="load-defaults">
 <h2>Load Defaults<a class="headerlink" href="#load-defaults" title="Permalink to this heading">#</a></h2>
-<a class="reference internal image-reference" href="_images/16-defaults.png"><img alt="_images/16-defaults.png" src="_images/16-defaults.png" style="width: 280.5px; height: 67.5px;" /></a>
+<p>Reset all settings to their defaults and reboot the device.</p>
+<a class="only-light reference internal image-reference" href="_images/17-defaults.png"><img alt="_images/17-defaults.png" class="only-light" src="_images/17-defaults.png" style="width: 280.5px; height: 67.5px;" /></a>
+<a class="only-dark reference internal image-reference" href="_images/17-defaults1.png"><img alt="_images/17-defaults1.png" class="only-dark" src="_images/17-defaults1.png" style="width: 280.5px; height: 67.5px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Requires a long press on the <code class="docutils literal notranslate"><span class="pre">B</span></code> type buttons to confirm the action.</p>
+</div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -483,6 +603,7 @@ is bounded by the maximum pulse generation frequency.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direction-pin">Direction Pin</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limit-pin">Limit Pin</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#units">Units</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contrast">Contrast</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-defaults">Load Defaults</a></li>
 </ul>
   </nav></div>
