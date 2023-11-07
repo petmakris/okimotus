@@ -389,10 +389,15 @@ the two limit switches.</p>
 </section>
 <section id="movement-with-home-position-known">
 <h2>Movement with home position known<a class="headerlink" href="#movement-with-home-position-known" title="Permalink to this heading">#</a></h2>
-<p>If the home position is known (succesful homing sequence performed) then the motor is
-allowed to move between <cite>zero</cite> and <a class="reference internal" href="settings.html#position-max"><span class="std std-ref">Position Max</span></a>.</p>
-<p>In this case there is no undershoot as the motor should stop before triggering the limit switch
-(if the limit switch is triggered while the motor moved between <cite>zero</cite> and <a class="reference internal" href="settings.html#position-max"><span class="std std-ref">Position Max</span></a> then</p>
+<p>If the home position is known (successful homing sequence performed) then the motor is
+allowed to move between <cite>zero</cite> (position <code class="docutils literal notranslate"><span class="pre">X0</span></code>) and <a class="reference internal" href="settings.html#position-max"><span class="std std-ref">Position Max</span></a> (position <code class="docutils literal notranslate"><span class="pre">Xm</span></code>).
+The allowed range of motion is denoted in the next figure as <code class="docutils literal notranslate"><span class="pre">Sm</span></code>.</p>
+<p>In the <code class="docutils literal notranslate"><span class="pre">Sm</span></code> range there must be no trigger from any limit switch.
+If the limit switch is triggered while the motor moves between <code class="docutils literal notranslate"><span class="pre">X0</span></code> and <code class="docutils literal notranslate"><span class="pre">Xm</span></code> then axis will
+halt and indicate an error has occurred (the display will show <cite>Status 101</cite>).</p>
+<p>Sometimes we want the home position to be at some specific distance from the limit switch
+and is denoted by the symbol <code class="docutils literal notranslate"><span class="pre">Sb</span></code> in the next figure. The distance <code class="docutils literal notranslate"><span class="pre">Sb</span></code> is called
+the <cite>Backoff distance</cite> and configurable via the <a class="reference internal" href="settings.html#backoff-distance"><span class="std std-ref">Backoff Distance</span></a> parameter.</p>
 <figure class="align-default">
 <a class="only-light reference internal image-reference" href="_images/homed.png"><img alt="_images/homed.png" class="only-light" src="_images/homed.png" style="width: 565.6px; height: 187.20000000000002px;" /></a>
 </figure>

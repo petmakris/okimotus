@@ -39,11 +39,18 @@ the two limit switches.
 Movement with home position known 
 -------------------------------------------------
 
-If the home position is known (succesful homing sequence performed) then the motor is
-allowed to move between `zero` and :ref:`Position Max`. 
+If the home position is known (successful homing sequence performed) then the motor is
+allowed to move between `zero` (position ``X0``) and :ref:`Position Max` (position ``Xm``). 
+The allowed range of motion is denoted in the next figure as ``Sm``. 
 
-In this case there is no undershoot as the motor should stop before triggering the limit switch 
-(if the limit switch is triggered while the motor moved between `zero` and :ref:`Position Max` then 
+In the ``Sm`` range there must be no trigger from any limit switch. 
+If the limit switch is triggered while the motor moves between ``X0`` and ``Xm`` then axis will 
+halt and indicate an error has occurred (the display will show `Status 101`).
+
+Sometimes we want the home position to be at some specific distance from the limit switch
+and is denoted by the symbol ``Sb`` in the next figure. The distance ``Sb`` is called 
+the `Backoff distance` and configurable via the :ref:`Backoff Distance` parameter.
+
 
 .. figure:: /images/limits/homed.png
     :scale: 80 %
