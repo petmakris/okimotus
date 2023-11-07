@@ -3,34 +3,58 @@
 Limits & Homing
 =================================================
 
-Limit switches for constraining motion or bouncing
+Free movement when home position is unknown 
+-------------------------------------------------
 
-|
-
-.. image:: /images/limits/limits.png
+.. figure:: /images/limits/limits.png
     :scale: 80 %
     :class: only-light
 
-.. image:: /images/limits/limits-inverted.png
+.. figure:: /images/limits/limits-inverted.png
     :scale: 80 %
     :class: only-dark
 
+
+Axis will freely rotate the motor when the home position is unknown (homing sequence not yet performed)
+until it reaches a limit switch where it will either stop or reverse depending on the ``Bounce`` setting.
+
+If ``Bounce`` is ``Forward`` or ``Both`` and the motor is moving in the forward direction
+then the motor will reverse when the limit switch is triggered (position ``B``). The motor will overshoot
+by an amount ``ΔL+`` which depends on the current motor velocity and acceleration. 
+If ``Bounce`` is not enabled for the forward direction then the motor will just 
+stop when the limit switch is triggered (position ``B``).
+
+If ``Bounce`` is ``Backward`` or ``Both`` and the motor is moving in the backward direction
+then the motor will reverse if the limit switch is triggered (position ``A``). The motor will overshoot
+by an amount ``ΔL-`` which depends on the current motor velocity and acceleration.
+If ``Bounce`` is not enabled for the backward direction then the motor will just 
+stop when the limit switch is triggered (position ``A``).
+
+E.g. If two limit switches are connected in parallel and `Bounce` is ``Both``, 
+if a continuous motion is started by long pressing ``A-`` or ``A+`` then the motor will continuously move between
+the two limit switches. 
+
 |
 
+Movement with home position known 
+-------------------------------------------------
 
-Limit switches for constraining motion or bouncing
+If the home position is known (succesful homing sequence performed) then the motor is
+allowed to move between `zero` and :ref:`Position Max`. 
 
-|
+In this case there is no undershoot as the motor should stop before triggering the limit switch 
+(if the limit switch is triggered while the motor moved between `zero` and :ref:`Position Max` then 
 
-.. image:: /images/limits/homed.png
+.. figure:: /images/limits/homed.png
     :scale: 80 %
     :class: only-light
 
-.. image:: /images/limits/homed-inverted.png
+.. figure:: /images/limits/homed-inverted.png
     :scale: 80 %
     :class: only-dark
 
-|
+
 
 |
+
 

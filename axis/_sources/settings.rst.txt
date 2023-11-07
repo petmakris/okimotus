@@ -6,11 +6,11 @@ Settings
 
 |
 
+.. _Bounce:
 Bounce
 ---------------------------------------------------------
 
-Select the bouncing behavior, applies only when *home position is known*. 
-When the home position is known then when `moving in continuous mode`:
+Select the bouncing behavior, applies only when *home position is known*.
 
 * ``None`` will not bounce at all
 * ``Backward`` will bounce when moving backward at zero position.

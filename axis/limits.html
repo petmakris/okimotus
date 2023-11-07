@@ -222,6 +222,10 @@ document.write(`
   
 
   
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
 </div>
 
     </nav>
@@ -356,27 +360,49 @@ document.write(`
                   
   <section id="limits-homing">
 <span id="id1"></span><h1>Limits &amp; Homing<a class="headerlink" href="#limits-homing" title="Permalink to this heading">#</a></h1>
-<p>Limit switches for constraining motion or bouncing</p>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+<section id="free-movement-when-home-position-is-unknown">
+<h2>Free movement when home position is unknown<a class="headerlink" href="#free-movement-when-home-position-is-unknown" title="Permalink to this heading">#</a></h2>
+<figure class="align-default">
 <a class="only-light reference internal image-reference" href="_images/limits.png"><img alt="_images/limits.png" class="only-light" src="_images/limits.png" style="width: 561.6px; height: 192.8px;" /></a>
+</figure>
+<figure class="align-default">
 <a class="only-dark reference internal image-reference" href="_images/limits-inverted.png"><img alt="_images/limits-inverted.png" class="only-dark" src="_images/limits-inverted.png" style="width: 561.6px; height: 192.8px;" /></a>
+</figure>
+<p>Axis will freely rotate the motor when the home position is unknown (homing sequence not yet performed)
+until it reaches a limit switch where it will either stop or reverse depending on the <code class="docutils literal notranslate"><span class="pre">Bounce</span></code> setting.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">Bounce</span></code> is <code class="docutils literal notranslate"><span class="pre">Forward</span></code> or <code class="docutils literal notranslate"><span class="pre">Both</span></code> and the motor is moving in the forward direction
+then the motor will reverse when the limit switch is triggered (position <code class="docutils literal notranslate"><span class="pre">B</span></code>). The motor will overshoot
+by an amount <code class="docutils literal notranslate"><span class="pre">ΔL+</span></code> which depends on the current motor velocity and acceleration.
+If <code class="docutils literal notranslate"><span class="pre">Bounce</span></code> is not enabled for the forward direction then the motor will just
+stop when the limit switch is triggered (position <code class="docutils literal notranslate"><span class="pre">B</span></code>).</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">Bounce</span></code> is <code class="docutils literal notranslate"><span class="pre">Backward</span></code> or <code class="docutils literal notranslate"><span class="pre">Both</span></code> and the motor is moving in the backward direction
+then the motor will reverse if the limit switch is triggered (position <code class="docutils literal notranslate"><span class="pre">A</span></code>). The motor will overshoot
+by an amount <code class="docutils literal notranslate"><span class="pre">ΔL-</span></code> which depends on the current motor velocity and acceleration.
+If <code class="docutils literal notranslate"><span class="pre">Bounce</span></code> is not enabled for the backward direction then the motor will just
+stop when the limit switch is triggered (position <code class="docutils literal notranslate"><span class="pre">A</span></code>).</p>
+<p>E.g. If two limit switches are connected in parallel and <cite>Bounce</cite> is <code class="docutils literal notranslate"><span class="pre">Both</span></code>,
+if a continuous motion is started by long pressing <code class="docutils literal notranslate"><span class="pre">A-</span></code> or <code class="docutils literal notranslate"><span class="pre">A+</span></code> then the motor will continuously move between
+the two limit switches.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Limit switches for constraining motion or bouncing</p>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+</section>
+<section id="movement-with-home-position-known">
+<h2>Movement with home position known<a class="headerlink" href="#movement-with-home-position-known" title="Permalink to this heading">#</a></h2>
+<p>If the home position is known (succesful homing sequence performed) then the motor is
+allowed to move between <cite>zero</cite> and <a class="reference internal" href="settings.html#position-max"><span class="std std-ref">Position Max</span></a>.</p>
+<p>In this case there is no undershoot as the motor should stop before triggering the limit switch
+(if the limit switch is triggered while the motor moved between <cite>zero</cite> and <a class="reference internal" href="settings.html#position-max"><span class="std std-ref">Position Max</span></a> then</p>
+<figure class="align-default">
 <a class="only-light reference internal image-reference" href="_images/homed.png"><img alt="_images/homed.png" class="only-light" src="_images/homed.png" style="width: 565.6px; height: 187.20000000000002px;" /></a>
+</figure>
+<figure class="align-default">
 <a class="only-dark reference internal image-reference" href="_images/homed-inverted.png"><img alt="_images/homed-inverted.png" class="only-dark" src="_images/homed-inverted.png" style="width: 565.6px; height: 187.20000000000002px;" /></a>
+</figure>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+</section>
 </section>
 
 
@@ -413,6 +439,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#free-movement-when-home-position-is-unknown">Free movement when home position is unknown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movement-with-home-position-known">Movement with home position known</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
