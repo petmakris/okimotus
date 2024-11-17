@@ -9,7 +9,8 @@ output linear speed depends additionally on the `Unit/Rev` setting.
 
 E.g. With 8x micro-stepping we configure for 1600 `Steps/Rev` and this yields a maximum output RPM of 2812.5.
 
-Additionally, in linear mode and in metric units, assuming a 5mm ballscrew/leadscrew pitch (`Unit/Rev` is 5mm) results in 14062.5 mm/sec maximum output speed.
+Additionally, in linear mode and in metric units, assuming a 5mm 
+ballscrew/leadscrew pitch (`Unit/Rev` is 5mm) results in 14062.5 mm/min maximum speed.
 
 |
 
